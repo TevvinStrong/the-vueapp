@@ -16,5 +16,6 @@ h1 {
   height: 75px;
   font-weight: normal;
   padding-top: 6%;
+  margin-left: 17%;
 }
 </style>
