@@ -1,16 +1,20 @@
 <template>
   <div id="memeGenerator">
     <MemeGeneratorHeader />
+     <TextInput />
   </div>
 </template>
 
 <script>
-import MemeGeneratorHeader from './components/Header/Header.vue';
+    import MemeGeneratorHeader from './components/layout/Header.vue';
+    import TextInput from './components/ui/TextInput.vue';
 
 export default {
   name: 'App',
   components: {
-    MemeGeneratorHeader
+      MemeGeneratorHeader,
+      // new
+      TextInput
   }
 }
 </script>
