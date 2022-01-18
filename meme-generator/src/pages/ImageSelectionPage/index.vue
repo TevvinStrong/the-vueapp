@@ -1,15 +1,17 @@
 <template>
   <div id="meme-generator">
     <MemeGeneratorHeader text="Meme Machine" id="main-header"/>
-    <TextInput v-model="inputText" placeholder="type input here!" id="input-text-component"></TextInput>
+    <CarouselImage />
+    <TextInput v-model="inputText" placeholder="type input here!"></TextInput>
     <!-- purely for sake of testing input from child -->
-    <p> i'm in the parent component!: {{ inputText }}</p>
+    <p id="input-example"> i'm in the parent component!: {{ inputText }}</p>
   </div>
 </template>
 
 <script>
-    import MemeGeneratorHeader from '@/components/layout/Header.vue';
-    import TextInput from '@/components/ui/TextInput.vue';
+  import CarouselImage from '@/components/carousel/CarouselImage.vue';
+  import MemeGeneratorHeader from '@/components/layout/Header.vue';
+  import TextInput from '@/components/ui/TextInput.vue';
 
   export default {
     name: 'ImageSelectionPage',
@@ -19,16 +21,20 @@
       }
     },
     components: {
+      CarouselImage,
       MemeGeneratorHeader,
       TextInput
     }
   }
 </script>
 
-<style>
+<style scoped>
   #meme-generator {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  #text-input-container, #input-example {
+    text-align: center;
   }
 </style>

@@ -1,7 +1,7 @@
 <template>
-    <div id="text-input-container">
+    <div class="text-input-container">
         <input
-            class="input"
+            class="text-input"
             type="text"
             :id="id"
             :placeholder="placeholder"
@@ -22,6 +22,10 @@ export default {
         },
         value: {
             type: String
+        },
+        height: {
+            type: Number,
+            default: 100
         }
     },
     methods: {
@@ -33,10 +37,16 @@ export default {
 </script>
 
 <style scoped>
-    #text-input-container {
-        height: 30px;
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+    .text-input-container {
+        text-align: center;
+        width: 100%;
+        height: 100px;        
     }
-    #input {
+    .text-input {
+        font-size: 50px;
+        font-family: 'Raleway', sans-serif;
         width: 500px;
+        height: 100px;
     }
 </style>

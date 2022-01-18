@@ -5,17 +5,15 @@
 </template>
 
 <script>
+  import ImageSelectionPage from '@/pages/ImageSelectionPage';
 
-import ImageSelectionPage from '@/pages/ImageSelectionPage';
-
-export default {
-  name: 'App',
-  components: {
-    ImageSelectionPage
+  export default {
+    name: 'App',
+    components: {
+      ImageSelectionPage
+    }
   }
-}
 </script>
-
 
 <style>
   #image-selection-page {
