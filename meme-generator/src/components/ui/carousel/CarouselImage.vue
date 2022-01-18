@@ -14,7 +14,7 @@
         text-align: center;
     }
     .carousel-image-container img {
-        width: 400px;
+        width: 300px;
         border: 2px solid black;
         margin: 40px;
     }

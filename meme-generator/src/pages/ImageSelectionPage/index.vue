@@ -1,7 +1,7 @@
 <template>
   <div id="meme-generator">
     <MemeGeneratorHeader text="Meme Machine" id="main-header"/>
-    <CarouselImage />
+    <Carousel />
     <TextInput v-model="inputText" placeholder="type input here!"></TextInput>
     <!-- purely for sake of testing input from child -->
     <p id="input-example"> i'm in the parent component!: {{ inputText }}</p>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import CarouselImage from '@/components/carousel/CarouselImage.vue';
+  import Carousel from '@/components/ui/carousel/Carousel.vue';
   import MemeGeneratorHeader from '@/components/layout/Header.vue';
   import TextInput from '@/components/ui/TextInput.vue';
 
@@ -21,7 +21,7 @@
       }
     },
     components: {
-      CarouselImage,
+      Carousel,
       MemeGeneratorHeader,
       TextInput
     }
