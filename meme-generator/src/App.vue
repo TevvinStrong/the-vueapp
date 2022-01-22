@@ -1,24 +1,22 @@
 <template>
-  <div id="memeGenerator">
-    <MemeGeneratorHeader />
+  <div id="image-selection-page">
+    <ImageSelectionPage />
   </div>
 </template>
 
 <script>
-import MemeGeneratorHeader from './components/Header/Header.vue';
+  import ImageSelectionPage from '@/pages/ImageSelectionPage';
 
-export default {
-  name: 'App',
-  components: {
-    MemeGeneratorHeader
+  export default {
+    name: 'App',
+    components: {
+      ImageSelectionPage
+    }
   }
-}
 </script>
 
 <style>
-  #memeGenerator {
-    height: 963px;
-    display: flex;
-    justify-content: center;
+  #image-selection-page {
+    height: 100%; 
   }
 </style>
