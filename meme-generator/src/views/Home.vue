@@ -10,23 +10,21 @@
 
 
 <script>
-  import Carousel from '@/components/ui/carousel/Carousel.vue';
-  import MemeGeneratorHeader from '@/components/layout/Header.vue';
-  import TextInput from '@/components/ui/TextInput.vue';
+import Carousel from '@/components/ui/carousel/Carousel.vue';
+import MemeGeneratorHeader from '@/components/layout/Header.vue';
+import TextInput from '@/components/ui/TextInput.vue';
 
-  export default {
-    name: 'Home',
-    props: {
-      inputText: {
-        type: String
-      }
-    },
-    components: {
-      Carousel,
-      MemeGeneratorHeader,
-      TextInput
-    }
+export default {
+  name: 'Home',
+  props: {
+    inputText: String
+  },
+  components: {
+    Carousel,
+    MemeGeneratorHeader,
+    TextInput
   }
+}
 </script>
 
 <style scoped>

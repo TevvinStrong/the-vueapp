@@ -22,7 +22,7 @@ export default {
     font-size: 96px;
     text-align: center;
     width: 100%;
-    font-weight: normal;
+    font-weight: bold;
     padding: 50px 0 0 0;
     margin: 0;
   }

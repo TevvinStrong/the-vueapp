@@ -10,7 +10,20 @@
   </div>
 </template>
 
+<script>
+
+export default {
+  mounted() {
+    document.body.classList.add('bg-grey')
+  },
+}
+</script>
+
+
 <style>
+.bg-grey {
+  background-color: #8e8e8e;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

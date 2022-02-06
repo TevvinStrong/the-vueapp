@@ -1,11 +1,16 @@
 <template>
     <div class="carousel-image-container">
-        <img src="https://cdn.kqed.org/wp-content/uploads/sites/38/2019/03/tomemeornot3-768x384.jpg" alt="Funny Picture/Funny meme">
+        <img :src="meme.url" :alt="meme.name">
     </div>
 </template>
 
 <script>
-    export default { }
+export default {
+    name: 'CarouselImage',
+    props: {
+        meme: Object
+    }
+}
 </script>
 
 <style scoped>
@@ -15,7 +20,6 @@
     }
     .carousel-image-container img {
         width: 300px;
-        border: 2px solid black;
-        margin: 40px;
+        margin: 20px;
     }
 </style>
