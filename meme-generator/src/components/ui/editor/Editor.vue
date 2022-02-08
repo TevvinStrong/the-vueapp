@@ -22,11 +22,11 @@ export default {
 </script>
 
 <style scoped>
-    .editor {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-    }
+.editor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="canvas-container">
+  <div class="canvas">
     <canvas id="memeCanvas" ref="memeCanvas"></canvas>
   </div>
 </template>

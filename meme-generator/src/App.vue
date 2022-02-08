@@ -13,6 +13,7 @@
 <script>
 
 export default {
+  name: 'App',
   mounted() {
     document.body.classList.add('bg-grey')
   },

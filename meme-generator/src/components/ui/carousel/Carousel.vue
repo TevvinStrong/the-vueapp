@@ -1,5 +1,5 @@
 <template>
-    <div class="carousel-container">
+    <div class="carousel">
         <CarouselImages :index="index" />
         <CarouselArrows @arrowClicked="handleArrowClicked"/>
     </div>
@@ -10,6 +10,7 @@ import CarouselImages from '@/components/ui/carousel/CarouselImages.vue';
 import CarouselArrows from '@/components/ui/carousel/CarouselArrows.vue';
 
 export default {
+    name: 'Carousel',
     components: {
         CarouselImages,
         CarouselArrows

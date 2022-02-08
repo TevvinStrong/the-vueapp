@@ -1,5 +1,5 @@
 <template>
-    <div class="carousel-image-container">
+    <div class="carousel-image">
         <img v-on:click="imageClicked()" :src="meme.url" :alt="meme.name">
     </div>
 </template>
@@ -29,12 +29,12 @@ export default {
 </script>
 
 <style scoped>
-    .carousel-image-container {
-        width: 100%;
-        text-align: center;
-    }
-    .carousel-image-container img {
-        width: 300px;
-        margin: 20px;
-    }
+.carousel-image {
+    width: 100%;
+    text-align: center;
+}
+.carousel-image img {
+    width: 300px;
+    margin: 20px;
+}
 </style>

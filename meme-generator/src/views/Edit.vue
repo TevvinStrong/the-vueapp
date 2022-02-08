@@ -1,12 +1,14 @@
 <template>
   <div class="edit">
-    <h1>Meme editor page</h1>
+    <Header text="Edit Your Meme" id="main-header"/>
     <Editor :imageUrl="imageUrl"/>
   </div>
 </template>
 
 <script>
 import Editor from '@/components/ui/editor/Editor.vue';
+import Header from '@/components/layout/Header.vue';
+
 
 export default {
   name: 'Edit',
@@ -15,6 +17,7 @@ export default {
   },
   components: {
     Editor,
+    Header
   },
 }
 </script>

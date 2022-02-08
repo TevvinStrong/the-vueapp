@@ -61,11 +61,11 @@ export default {
 </script>
 
 <style scoped>
-    .carousel-images {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: 500px;
-    }
+.carousel-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
 </style>

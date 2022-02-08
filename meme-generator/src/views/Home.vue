@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <MemeGeneratorHeader text="Meme Machine" id="main-header"/>
+    <Header text="Meme Machine" id="main-header"/>
     <Carousel />
     <TextInput v-model="inputText" placeholder="type input here!"></TextInput>
     <!-- purely for sake of testing input from child -->
@@ -11,7 +11,7 @@
 
 <script>
 import Carousel from '@/components/ui/carousel/Carousel.vue';
-import MemeGeneratorHeader from '@/components/layout/Header.vue';
+import Header from '@/components/layout/Header.vue';
 import TextInput from '@/components/ui/TextInput.vue';
 
 export default {
@@ -21,19 +21,19 @@ export default {
   },
   components: {
     Carousel,
-    MemeGeneratorHeader,
+    Header,
     TextInput
   }
 }
 </script>
 
 <style scoped>
-  #meme-generator {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #text-input-container, #input-example {
-    text-align: center;
-  }
+#meme-generator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#text-input-container, #input-example {
+  text-align: center;
+}
 </style>
