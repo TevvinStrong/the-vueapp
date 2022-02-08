@@ -17,7 +17,13 @@ export default {
 </script>
 
 <style scoped>
+    #left-arrow, #right-arrow {
+        padding-bottom: 25px;
+    }
     #left-arrow {
-        padding-right: 50px;
+        padding-right: 25px;
+    }
+    #right-arrow {
+        padding-left: 25px;
     }
 </style>

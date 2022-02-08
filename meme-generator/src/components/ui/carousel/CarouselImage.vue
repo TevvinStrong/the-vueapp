@@ -1,6 +1,6 @@
 <template>
     <div class="carousel-image-container">
-        <img :src="meme.url" :alt="meme.name">
+        <img v-on:click="imageClicked()" :src="meme.url" :alt="meme.name">
     </div>
 </template>
 
@@ -8,7 +8,22 @@
 export default {
     name: 'CarouselImage',
     props: {
-        meme: Object
+        meme: null
+    },
+    data() {
+        return {
+            apiImageUrl: []
+        }
+    },
+    methods: {
+        imageClicked() {
+            this.$router.push({
+                name: 'Edit',
+                params: {
+                    imageUrl: this.meme.url
+                }
+            })
+        }
     }
 }
 </script>
