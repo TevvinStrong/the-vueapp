@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import AddImage from '../views/AddImage.vue'
 
 Vue.use(VueRouter)
 
@@ -18,6 +19,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Edit.vue'),
     props: true
+  },
+  {
+    path: '/add',
+    name: 'Add',
+    component: AddImage
   }
 ]
 
